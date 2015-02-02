@@ -74,7 +74,7 @@ function check() {
     if (element && result) {
         var value = element.value;
         if (value == 1) {
-            result.innerHTML = "No, no es primo.";
+            result.innerHTML = "No, no es primo circular.";
         } else {
             var isCP = isCircularPrime(value);
             if (isCP) {
