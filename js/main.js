@@ -71,14 +71,18 @@ function check() {
     var result = document.getElementById('lbResultExtra');
     if (element && result) {
         var value = element.value;
-        var isCP = isCircularPrime(value);
-        if(isCP){
-            result.innerHTML = "Si, es primo circular";
+        if (value == 1) {
+            result.innerHTML = "No, no es primo.";
         } else {
-            result.innerHTML = "No, no es primo circular";
+            var isCP = isCircularPrime(value);
+            if (isCP) {
+                result.innerHTML = "Si, es primo circular.";
+            } else {
+                result.innerHTML = "No, no es primo circular.";
+            }
         }
     }
-    
+
     return false;
 }
 
@@ -89,6 +93,7 @@ function check() {
  */
 function get() {
     var primes = [];
+    primes[2] = 2;
     var a = 0;
 
     setTimeout(function () {
