@@ -1,0 +1,44 @@
+/* 
+    Created on : 02-feb-2015, 1:37:32
+    Author     : Erwin
+*/
+
+.body {
+    font-family: monospace;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn {
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: green;
+    cursor: pointer;
+}
+.btn:disabled {
+    background-color: darkseagreen;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+p{
+    word-break: break-all
+}
+
+.text-bold{
+    font-weight: bold;
+}

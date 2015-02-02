@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test de programación - MercadoLibre</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" >
+        <script src="js/main.js"></script>
+    </head>
+    <body class="body">
+        <h1>Bader, Erwin Ricardo.</h1>
+        <h3>Números primos circulares</h3>
+        <form >
+            <label>Obtener los primeros N números primos circulares menores a 1.000.000</label>
+            <br/>
+            <br/>
+            <button type="button" class="btn" onclick="get()">Obtener</button>
+            <button type="button" class="btn" onclick="clean()" id="btnClean" disabled="true" >Limpiar</button>
+            <br/>
+            <br/>
+            <label id="lbCountResult" class="text-bold"> </label>
+            <p id="lbResult"> </p>
+        </form>
+        <br/>
+        <br/>
+        <h3>Ejercicio Extra</h3>
+        <form onsubmit="return check();">
+            <label>¿Es primo circular?</label>
+            <input type="number" id="inpValue" min="0" required>
+            <button type="submit" class="btn" >Verificar</button>
+            <br/>
+            <label id="lbResultExtra"></label>
+        </form>
+    </body>
+</html>
