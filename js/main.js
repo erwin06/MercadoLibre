@@ -54,10 +54,12 @@ function orbit(number) {
  */
 function clean() {
     var element = document.getElementById('lbResult');
-    if (element) {
-        element.innerHTML = '';
-    }
+    var countResult = document.getElementById('lbCountResult');
     var btnClean = document.getElementById('btnClean');
+    if (element)
+        element.innerHTML = "";
+    if (countResult)
+        countResult.innerHTML = '';
     if (btnClean)
         btnClean.disabled = true;
 }
